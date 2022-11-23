@@ -1,0 +1,17 @@
+:root
+{
+   --body-color:#272B30;
+   --main-color:#4799EB;
+   --sec-color:#939591;
+}
+
+body
+{
+   background-color:var(--body-color);
+   color: #fff;
+}
+ul,li,a
+{
+   text-decoration: none;
+   list-style-type: none;
+}

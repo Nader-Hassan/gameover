@@ -1,0 +1,32 @@
+.bg-games
+{
+    background-image: url(../../images/game1.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding: 4rem 2rem;
+    border: 1px solid rgba(0,0,0.6);
+    background-color: #1c1e22;
+    border-radius: 0.3rem;
+}
+.btn-games
+{
+    border: 1px solid grey !important;
+    color: grey !important;
+}
+.btn-games:hover
+{
+    border: 1px solid grey !important;
+    background-color: grey !important;
+    color: #fff !important;
+}
+.gameBody
+{
+    background-color: #32383E;
+}
+.gameBody .free
+{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    
+}

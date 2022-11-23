@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+.navbar-brand img
+{
+    width: 70px;  
+    filter: drop-shadow(1px 1px 3px #1983e6ce);
+}
+.navbar-brand
+{
+    font-family: 'Xanh Mono', monospace;
+}
+nav
+{
+    background-color: var(--body-color);
+}
+.dropdown-menu
+{
+    background-color: #1D1F23 !important;
+}
+.dropdown-menu li a
+{
+    color: #fff;
+}
+.dropdown-menu li a:hover
+{
+    background-color: #272b30;
+    color: #fff;
+}
+.dropdown-menu li a:focus-within
+{
+    background-color: #272b30;
+    color: #fff;
+}
+.register
+{
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color) !important;
+}
+.logout
+{
+    cursor: pointer;
+}

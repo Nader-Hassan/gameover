@@ -1,0 +1,33 @@
+.gaming-logo {
+    background-image: url('../../images/gaming.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.form-btn {
+    border: 1px solid #22241d !important;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #3a3f44 !important;
+    color: #fff !important;
+}
+
+.form-body {
+    background-color: #32383E;
+}
+
+input {
+    background-color: #1c1e22 !important;
+    color: #fff !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+form a
+{
+    color:var(--main-color) ;
+}
