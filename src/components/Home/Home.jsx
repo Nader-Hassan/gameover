@@ -37,12 +37,14 @@ export default function Home() {
     <section className='container mt-4'>
 <h3 className='text-white-50 mb-4'><i className="fa-solid fa-robot"></i> Personalized Recommendations</h3>
   <div className="row">
-   {allGames.length > 0? allGames.slice(0,3).map((game , idx)=>   <div key={idx} onClick={()=> getDetails(game.id)} className="col-md-4">
-    <img className='w-100' src={game.thumbnail} alt="" />
+   {allGames.length > 0? allGames.slice(0,3).map((game , idx)=>   <div key={idx} onClick={()=> getDetails(game.id)} className="col-md-4 ">
+   <div className="gamecard">
+   <img className='w-100' src={game.thumbnail} alt="" />
     <div className='d-flex justify-content-between align-items-center gameBody shadow p-3'>
       <h4>{game.title}</h4>
       <span className='free p-2'>FREE</span>
     </div>
+   </div>
     </div> ) :<Loading/>} 
   </div>
 </section>

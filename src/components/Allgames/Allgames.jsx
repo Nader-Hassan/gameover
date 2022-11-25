@@ -39,6 +39,7 @@ export default function Allgames() {
      <section className='container my-4  text-center'>
             <div className="row g-4 ">
                 {allGames.length > 0? allGames.slice(0, count).map((game, idx) => <div key={idx} onClick={()=> getDetails(game.id)} className="col-md-3">
+                    <div className="gamecard">
                     <img className='w-100' src={game.thumbnail} alt="" />
                     <div className='gameBody shadow p-3'>
                         <div className='d-flex justify-content-between align-items-center'>
@@ -52,6 +53,7 @@ export default function Allgames() {
                                     {game.platform === 'PC (Windows)' ? <i className="fa-brands fa-windows text-secondary"></i> : <i className="fa-brands fa-chrome text-secondary"></i>}
                                 </div>
                             </div>
+                    </div>
                     </div>
                   </div>) : <Loading/>}
                 </div>

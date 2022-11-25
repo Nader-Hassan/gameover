@@ -4,3 +4,7 @@
     color: #272b30 !important;
     font-size: 13px;
 }
+
+.gamecard {
+    cursor: pointer;
+}
