@@ -8,8 +8,6 @@ import Register from './components/Register/Register';
 import jwtDecode from 'jwt-decode'
 import { useEffect } from 'react';
 import Allgames from './components/Allgames/Allgames';
-import Platform from './components/Platforms/Platform';
-import Sortby from './components/Sortby/Sortby';
 import Gamedetails from './components/Gamedetails/Gamedetails';
 import Categories from './components/Categories/Categories';
 export default function App() {
@@ -46,9 +44,7 @@ export default function App() {
     {path:'' , element:<Layout userData={userData} userlogOut={logOut}/> ,children:[
       {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
       {path:'allgames' , element:<ProtectedRoute><Allgames/></ProtectedRoute>},
-      {path:'platform/:path' , element:<ProtectedRoute><Platform/></ProtectedRoute>},
-      {path:'sort-by/:path' , element:<ProtectedRoute><Sortby/></ProtectedRoute>},
-      {path:'cateogries/:path' , element:<ProtectedRoute><Categories/></ProtectedRoute>},
+      {path:'/:cat/:path' , element:<ProtectedRoute><Categories/></ProtectedRoute>},
       {path:'gamedetails/:path' , element:<ProtectedRoute><Gamedetails/></ProtectedRoute>},
       {path:'login' , element:<Login saveUserData={saveUserData}/>},
       {path:'register' , element:<Register/>},

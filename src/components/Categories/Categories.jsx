@@ -12,11 +12,10 @@ export default function Categories() {
     {
       navigate(`/gamedetails/${id}`)
     }
-    let {path} = useParams();
+    let {path,cat} = useParams();
     async function getGames() {
-        let { data } = await axios.get('https://free-to-play-games-database.p.rapidapi.com/api/games',
+        let { data } = await axios.get(`https://free-to-play-games-database.p.rapidapi.com/api/games?${cat}=${path}`,
             {
-                params: {category: path},
                 headers: {
                     'X-RapidAPI-Key': 'fc42eedff7msh1176cf883aee197p199b36jsn12e2a3062d67',
                     'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
@@ -24,17 +23,15 @@ export default function Categories() {
             })
         setallGames(data);
     }
+
     function browseGames()
     {
         let newcount = count
         newcount+=20
-        
         setcount(newcount)
     }
     useEffect(() => {
         getGames();
-
-
     }, [path])
 
     return <>

@@ -55,17 +55,17 @@ export default function Navbar({userData , userlogOut}) {
           Categories
           </Link>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" to="/cateogries/shooter">shooter</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/racing">Racing</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/sports">Sports</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/social">Social</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/open-world">Open World</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/zombie">Zombie</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/fantasy">Fantasy</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/action-rpg">Action Rpg</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/action">Action</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/flight">Flight</Link></li>
-            <li><Link className="dropdown-item" to="/cateogries/battle-royale">Battle Royale</Link></li>
+            <li><Link className="dropdown-item" to="/category/shooter">shooter</Link></li>
+            <li><Link className="dropdown-item" to="/category/racing">Racing</Link></li>
+            <li><Link className="dropdown-item" to="/category/sports">Sports</Link></li>
+            <li><Link className="dropdown-item" to="/category/social">Social</Link></li>
+            <li><Link className="dropdown-item" to="/category/open-world">Open World</Link></li>
+            <li><Link className="dropdown-item" to="/category/zombie">Zombie</Link></li>
+            <li><Link className="dropdown-item" to="/category/fantasy">Fantasy</Link></li>
+            <li><Link className="dropdown-item" to="/category/action-rpg">Action Rpg</Link></li>
+            <li><Link className="dropdown-item" to="/category/action">Action</Link></li>
+            <li><Link className="dropdown-item" to="/category/flight">Flight</Link></li>
+            <li><Link className="dropdown-item" to="/category/battle-royale">Battle Royale</Link></li>
           </ul>
         </li>
       </ul> </> : null}
